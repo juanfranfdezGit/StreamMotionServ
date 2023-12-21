@@ -6,10 +6,10 @@ const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 
 const sessionStore = new MySQLStore({
-    host: 'sql.freedb.tech',
-    user: 'freedb_juanfranfdez',
-    password: '!XFdrKDs6J8xHfe',
-    database: 'freedb_streammotion',
+    host: 'buzzhrgpoghzmx90zja9-mysql.services.clever-cloud.com',
+    user: 'ufayqj9slokg4zu1',
+    password: '28RLxKXmsXCKouxEKhv9',
+    database: 'buzzhrgpoghzmx90zja9',
 });
 app.use(session({
     secret: 'mail',
@@ -34,10 +34,10 @@ app.use(cors({
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: 'sql.freedb.tech',
-    user: 'freedb_juanfranfdez',
-    password: '!XFdrKDs6J8xHfe',
-    database: 'freedb_streammotion',
+    host: 'buzzhrgpoghzmx90zja9-mysql.services.clever-cloud.com',
+    user: 'ufayqj9slokg4zu1',
+    password: '28RLxKXmsXCKouxEKhv9',
+    database: 'buzzhrgpoghzmx90zja9',
     port: "3306",
 });
 
