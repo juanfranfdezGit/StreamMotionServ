@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'StreamMotionServer'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4440120AD16F48E496A0FA3F950B0DB8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_404F2E6885964C5481C943BD94C09CCA }}
           package: .
