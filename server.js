@@ -6,10 +6,10 @@ const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 
 const sessionStore = new MySQLStore({
-    host: 'streammotion.database.windows.net',
-    user: 'juanfranfdez',
-    password: 'streammotionDB@',
-    database: 'StreamMotionDB',
+    host: 'sql.freedb.tech',
+    user: 'freedb_juanfranfdez',
+    password: '!XFdrKDs6J8xHfe',
+    database: 'freedb_streammotion',
 });
 app.use(session({
     secret: 'mail',
@@ -34,10 +34,10 @@ app.use(cors({
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: 'streammotion.database.windows.net',
-    user: 'juanfranfdez',
-    password: 'streammotionDB@',
-    database: 'StreamMotionDB',
+    host: 'sql.freedb.tech',
+    user: 'freedb_juanfranfdez',
+    password: '!XFdrKDs6J8xHfe',
+    database: 'freedb_streammotion',
     port: "3306",
 });
 
