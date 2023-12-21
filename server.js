@@ -26,7 +26,7 @@ app.use(session({
 }));
 
 app.use(cors({
-    origin: '',
+    origin: 'https://stream-motion-client.vercel.app/',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     exposedHeaders: ['Authorization'],
