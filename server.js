@@ -6,10 +6,10 @@ const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 
 const sessionStore = new MySQLStore({
-    host: 'buzzhrgpoghzmx90zja9-mysql.services.clever-cloud.com',
-    user: 'ufayqj9slokg4zu1',
-    password: '28RLxKXmsXCKouxEKhv9',
-    database: 'buzzhrgpoghzmx90zja9',
+    host: 'bhh5hzyt7g5nlkgzzvhk-mysql.services.clever-cloud.com',
+    user: 'ugsnwu0s10panprf',
+    password: 'vXsLeMSWoXszYJ0BAE7G',
+    database: 'bhh5hzyt7g5nlkgzzvhk',
 });
 app.use(session({
     secret: 'mail',
@@ -34,10 +34,10 @@ app.use(cors({
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: 'buzzhrgpoghzmx90zja9-mysql.services.clever-cloud.com',
-    user: 'ufayqj9slokg4zu1',
-    password: '28RLxKXmsXCKouxEKhv9',
-    database: 'buzzhrgpoghzmx90zja9',
+    host: 'bhh5hzyt7g5nlkgzzvhk-mysql.services.clever-cloud.com',
+    user: 'ugsnwu0s10panprf',
+    password: 'vXsLeMSWoXszYJ0BAE7G',
+    database: 'bhh5hzyt7g5nlkgzzvhk',
     port: "3306",
 });
 
